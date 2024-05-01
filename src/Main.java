@@ -81,7 +81,7 @@ public class Main {
                             } else {
                                 System.out.println("Сидим");
                             }
-                            {
+
                                 System.out.println("\nTack7");
 
                                 int one = 1;
@@ -100,7 +100,7 @@ public class Main {
                             }
                         }
                     }
-                }
+
 
 
 
