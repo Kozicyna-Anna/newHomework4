@@ -1,11 +1,14 @@
+import java.sql.SQLOutput;
+
 public class Main {
     public static void main(String[] args) {
 
         System.out.println("\nTack 1");
-        int age = 18;
+        int age = 19;
         if (age >= 18) {
-            System.out.println("если возраст человека равен " + age
-                    + " то нужно немного подождать");
+            System.out.println("он совершеннолетний");
+        } else {
+            System.out.println("он не достиг совершеннолетия, нужно немного подождать");
         }
 
         System.out.println("\nTack2");
@@ -29,51 +32,24 @@ public class Main {
         System.out.println("\nTack4");
         int years = 5;
         if (years >= 2 && years <= 6) {
+            System.out.println(" ему нужно ходить в детский сад");
+        } else if (years >= 7 && years <= 17) {
+            System.out.println("то ему нужно ходить в школу");
+        } else if (years >= 18 && years <= 24) {
+            System.out.println("нужно идти в университет");
+        } else if (years > 24) {
+            System.out.println("нужно идти на работу");
         }
-        System.out.println("если возраст человека равен " + years
-                + " то ему нужно ходить в детский сад");
-
-        if (years >= 7 && years <= 17) {
-        System.out.println("Если возраст человека равен " + years
-                        + "то ему нужно ходить в школу");
-        } else {
-         System.out.println("нужно идти в школу");
-        }
-        if (years >= 18 && years <= 24) {
-        System.out.println("Если возраст человека равен " + years
-                + "то ему нужно ходить в университет");
-        } else {
-        System.out.println("нужно идти в университет");
-        }
-        if (years > 24) {
-            System.out.println("Если возраст человека равен " + years
-                                + "то ему нужно ходить на работу");
-        } else {
-        System.out.println("нужно идти на работу");
-        }
-
 
         System.out.println("\nTack5");
         int child = 14;
         if (child < 5) {
-        System.out.println("Если возраст ребенка " + child
-                                + "он не может кататься на аттракционе");
-        } else {
-        System.out.println("не может кататься на аттракционе");
+            System.out.println("не может кататься на аттракционе");
+        } else if (child > 5 && child <= 14 ) {
+            System.out.println("может кататься в сопровождении взрослых");
+        } else if (child < 14) {
+            System.out.println("может кататься на аттракционе без сопровождения взрослых");
         }
-        if (child >= 5 && child <= 14) {
-        System.out.println("если возраст ребенка " + child
-                                + " он может кататься в сопровождении взрослых");
-        } else {
-        System.out.println("может кататься в сопровождении взрослых");
-        }
-        if (child > 14) {
-        System.out.println("Если возраст ребенка равен " + child
-                                + " он может кататься без сопровождения взрослого");
-        } else {
-        System.out.println("может кататься на аттракционе без сопровождения взрослых");
-        }
-
 
         System.out.println("\nTack6");
         int total = 102;
@@ -87,24 +63,29 @@ public class Main {
             } else {
                 System.out.println("Сидим");
             }
+        }
 
-            System.out.println("\nTack7");
-            int one = 1;
-            int two = 2;
-            int three = 3;
-            if (one > two && one > three) {
-                System.out.println(one);
+        System.out.println("\nTack7");
+        int one = 1;
+        int two = 2;
+        int three = 3;
+        if (one > two && one > three) {
+            System.out.println(one);
+        } else {
+            if (two > three) {
+                System.out.println(two);
             } else {
-                if (two > three) {
-                    System.out.println(two);
-                } else {
-                    System.out.println(three);
-
-                }
+                System.out.println(three);
             }
         }
     }
 }
+
+
+
+
+
+
 
 
 
